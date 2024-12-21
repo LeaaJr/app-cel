@@ -19,7 +19,7 @@ body {
     display: flex;
     flex-direction: column;
     width: 100%; /* Asegura que el contenedor ocupe el 100% del ancho disponible */
-    height: 100vh;
+    height: 670px;
     background: #111;
     overflow: hidden; /* Evita el desbordamiento */
     max-width: 100%;
@@ -71,33 +71,33 @@ body {
 }
 
 .item:nth-child(1) {
-  background-image: url("https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-16-finish-select-202409-6-1inch-ultramarine_AV1?wid=5120&hei=2880&fmt=webp&qlt=70&.v=UXp1U3VDY3IyR1hNdHZwdFdOLzg1V0tFK1lhSCtYSGRqMUdhR284NTN4L28rSU1jVGx4VGxCNEFSdVNXdG1RdzJSc2VJb0FISFY1LzJCMlcyeCs0eEFUMngwVnJycmY0WkN2ZnNvOUpFNFY4aEdha0F6blFmTkM2c3RxTWJNZ2FFRnZ4QmRNWmQ0OCt3NmpBeisralBB&traceId=1");
+  background-image: url("../Img/iphone-16-blue.webp");
   background-position: 50% 35%;
 }
 
 .item:nth-child(2) {
-  background-image: url("https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-16-finish-select-202409-6-1inch-teal_AV1?wid=5120&hei=2880&fmt=webp&qlt=70&.v=UXp1U3VDY3IyR1hNdHZwdFdOLzg1V0tFK1lhSCtYSGRqMUdhR284NTN4K05tOGV2bzRuYjBHQm9BRXF6V0NIa1pGQnBBWVp4a3ZSd0Y4NzlDUVE4dUJUU08xVXZOQlVmeWYva2RCcG9vcVVjb0pRV1BLWkpwS3lTdmpyVm9XVnRXVi9BOUVIMG00R2gwMHk0cXVORTFB&traceId=1");
-  background-position: 46% 8%;
+  background-image: url("../Img/iphone-16-green.webp");
+  background-position:50% 8%;
 }
 
 .item:nth-child(3) {
-  background-image: url("https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-16-pro-finish-select-202409-6-3inch-deserttitanium_AV1?wid=5120&hei=2880&fmt=webp&qlt=70&.v=eUdsd0dIb3VUOXdtWkY0VFUwVE8vbEdkZHNlSjBQRklnaFB2d3I5MW94Nm1neGR3bXRIczEyZHc4WTk0RkR4VCtvdWdQMWpIV2NFaHUyTjZvK3ozWmRJVUY1eklwSElSL2pyWFgySnpoc1RLa0ZJQjcvY2pnYVpRdGdHbzJQemdzTUJneFR6QWZGUkphUkd1a1VnbWdYNXFNVzc5YkZmK2I4YzJ4ZndkZUdj&traceId=1");
-  background-position: 52% 8%;
+  background-image: url("../Img/iphone-16-pro-deserttitanium.webp");
+  background-position: 50% 8%;
 }
 
 .item:nth-child(4) {
-  background-image: url("https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-16-pro-finish-select-202409-6-9inch-blacktitanium_AV1?wid=5120&hei=2880&fmt=webp&qlt=70&.v=eUdsd0dIb3VUOXdtWkY0VFUwVE8vbEdkZHNlSjBQRklnaFB2d3I5MW94NlcvVjg4Q2h4WWRjcFAyYlBrM0N1bENUcEx1KzZ4TU5aSmJ4VzBKZWFPSGppOHgxUjM1bG1hRnArQXQ1elR1Rk1aY2JtS1MrU1lZNlNHUVFTemFCTi9Xejlzcm5MeVVheDQwZ0ZkTEM4WHJR&traceId=1");
-  background-position: 45% 8%;
+  background-image: url("../Img/iphone-16-pro-max-blacktitanium.webp");
+  background-position: 50% 8%;
 }
 
 .item:nth-child(5) {
-  background-image: url("https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-15-model-unselect-gallery-2-202309_GEO_EMEA?wid=5120&hei=2880&fmt=webp&qlt=70&.v=aVFiZEF4WDEvUWJNSU5HRDg4cklnTGdzSmpObkZCM3MrNmJ5SkhESlNDZ2lGQTRGNnVYNjZ6NWNNT2RQbEdmK3ovdld4NkVCZ3JUZXJyZ1dUb1MwM0dKTG1lVWJJT2RXQWE0Mm9rU1V0V0JCV3NjNWl1UW9rVFRPUVBJRWJDd2NQb3R0UW1Yc3h6Um5aMXhHRitCYTBB&traceId=1");
-  background-position: 45% 25%;
+  background-image: url("../Img/iphone-15-model-rosa.webp");
+  background-position: 50% 25%;
 }
 
 .item:nth-child(6) {
-  background-image: url("https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-14-model-unselect-gallery-2-202303_GEO_EMEA?wid=5120&hei=2880&fmt=webp&qlt=70&.v=NjB6M3BqTGRudDZtakJrUG5tT2pHTGdzSmpObkZCM3MrNmJ5SkhESlNDZ1hBSXMwL2Jwdk9oTk42KzZHdTdNUXovdld4NkVCZ3JUZXJyZ1dUb1MwM0dKTG1lVWJJT2RXQWE0Mm9rU1V0V0IxZG1zQmhZY3FpN094bFJrYnF5eDR2azA1RzdtcFQ5a1dBaURTY0hJUEJB&traceId=1");
-  background-position: 48% 2%;
+  background-image: url("../Img/iphone-14-amarillo.webp");
+  background-position: 50% 2%;
 }
 
 .quote {
