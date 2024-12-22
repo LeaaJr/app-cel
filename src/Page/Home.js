@@ -6,6 +6,7 @@ import Banner from "../Components/Banner";
 import EleHover from "../Components/EleHover";
 import SectionGalery from '../Components/SectionGalery';
 import Carrousell from "../Components/Carrousell";
+import ColorChangeImage from '../Components/ColorChangeImage';
 
 const Home = () => {
   return (
@@ -29,7 +30,8 @@ const Home = () => {
         <img src={img.chip_A18PRO}></img>
       </div>
       <Carrousell />
-      <EleHover />
+      <ColorChangeImage />
+     {/*  <EleHover /> */}
     </>
   );
 };

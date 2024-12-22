@@ -12,6 +12,10 @@ import color__eaawe4 from './color__eaawe4.jpg'
 import hero_camera_hw from './hero_camera_hw.png'
 import chip_A18PRO from './chip_A18PRO.jpg'
 import frame_startframe from './frame_startframe.jpg'
+import black_titanium_selectimg from './black_titanium_selectimg.jpg'
+import desert_titanium_selectimg from './desert_titanium_selectimg.jpg'
+import natural_titanium_selectimg from './natural_titanium_selectimg.jpg'
+import white_titanium_selectimg from './white_titanium_selectimg.jpg'
 
 const img = {
 
@@ -28,7 +32,11 @@ const img = {
     color__eaawe4,
     hero_camera_hw,
     chip_A18PRO,
-    frame_startframe
+    frame_startframe,
+    '#121415': black_titanium_selectimg,
+    '#776353':desert_titanium_selectimg,
+    '#333739':natural_titanium_selectimg,
+    '#585f63':white_titanium_selectimg
 
 }
 

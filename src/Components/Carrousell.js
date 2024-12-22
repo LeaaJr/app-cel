@@ -5,10 +5,10 @@ const Carrousell = () => {
     // Define las imágenes en formato de array
     const images = [
       { src: img.displaylarge, alt: 'Image 1' },
-      { src: img.thin_eqeewf, alt: 'Image 2' },
-      { src: img.recycle_cam, alt: 'Image 3' },
-      { src: img.color__eaawe4, alt: 'Image 4' },
-      { src: img.frame_startframe, alt: 'Image 5' }
+      { src: img.frame_startframe, alt: 'Image 2' },
+      { src: img.thin_eqeewf, alt: 'Image 3' },
+      { src: img.recycle_cam, alt: 'Image 4' },
+      { src: img.color__eaawe4, alt: 'Image 5' }
     ];
   
     // Estado para la imagen activa
