@@ -8,7 +8,7 @@ const Carrousell = () => {
       { src: img.thin_eqeewf, alt: 'Image 2' },
       { src: img.recycle_cam, alt: 'Image 3' },
       { src: img.color__eaawe4, alt: 'Image 4' },
-      { src: img.hero_camera_hw, alt: 'Image 5' }
+      { src: img.frame_startframe, alt: 'Image 5' }
     ];
   
     // Estado para la imagen activa
@@ -33,7 +33,7 @@ const Carrousell = () => {
       return () => clearInterval(interval); // Limpiar el intervalo cuando el componente se desmonte
     }, []);
   
-    return (
+    return (        
       <div id="gallery" className="relative h-[450px] w-full bg-black" data-carousel="slide">
         {/* Carousel Wrapper */}
         <div className="relative h-full overflow-hidden rounded-lg">

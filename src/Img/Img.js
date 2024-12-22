@@ -10,6 +10,8 @@ import thin_eqeewf from './thin__eqeewf.jpg'
 import recycle_cam from './recycle_cam.jpg'
 import color__eaawe4 from './color__eaawe4.jpg'
 import hero_camera_hw from './hero_camera_hw.png'
+import chip_A18PRO from './chip_A18PRO.jpg'
+import frame_startframe from './frame_startframe.jpg'
 
 const img = {
 
@@ -24,7 +26,9 @@ const img = {
     thin_eqeewf,
     recycle_cam,
     color__eaawe4,
-    hero_camera_hw
+    hero_camera_hw,
+    chip_A18PRO,
+    frame_startframe
 
 }
 

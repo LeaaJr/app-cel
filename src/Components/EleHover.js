@@ -5,7 +5,7 @@ const EleHover = () => {
 
     return (
                 <div className="py-64">
-            <section className="bg-center bg-no-repeat bg-[url('https://www.apple.com/newsroom/images/2024/09/apple-introduces-iphone-16-and-iphone-16-plus/article/geo/Apple-iPhone-16-lineup-geo-240909_big.jpg.large.jpg')] bg-cover bg-gray-700 bg-blend-multiply">
+            <section className="bg-center bg-no-repeat bg-[url('https://www.apple.com/v/iphone-16-pro/a/images/overview/product-stories/design/ANIM/design_hero_endframe__f4saxkdyib2a_large_2x.jpg')] bg-cover bg-gray-700 bg-blend-multiply">
                 <div className="px-4 mx-auto max-w-screen-xl text-center py-24 lg:py-56">
                     <h1 className="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl">Descubre el nuevo Potencial</h1>
                     <p className="mb-8 text-lg font-normal text-gray-300 lg:text-xl sm:px-16 lg:px-48">Con una nueva tecnologia inovadora, mas funciones, mas calidad, mejor diseño.</p>

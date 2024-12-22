@@ -19,7 +19,7 @@ body {
     display: flex;
     flex-direction: column;
     width: 100%; /* Asegura que el contenedor ocupe el 100% del ancho disponible */
-    height: 670px;
+    height: 740px;
     background: #111;
     overflow: hidden; /* Evita el desbordamiento */
     max-width: 100%;
