@@ -7,6 +7,7 @@ import EleHover from "../Components/EleHover";
 import SectionGalery from '../Components/SectionGalery';
 import Carrousell from "../Components/Carrousell";
 import ColorChangeImage from '../Components/ColorChangeImage';
+import ImgPhone from "../Components/ImgPhone";
 
 const Home = () => {
   return (
@@ -31,7 +32,10 @@ const Home = () => {
       </div>
       <Carrousell />
       <ColorChangeImage />
-     {/*  <EleHover /> */}
+      <div className="pt-96 pb-32">
+      <EleHover />
+      </div>
+      <ImgPhone />
     </>
   );
 };

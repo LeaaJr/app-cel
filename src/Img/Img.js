@@ -16,6 +16,9 @@ import black_titanium_selectimg from './black_titanium_selectimg.jpg'
 import desert_titanium_selectimg from './desert_titanium_selectimg.jpg'
 import natural_titanium_selectimg from './natural_titanium_selectimg.jpg'
 import white_titanium_selectimg from './white_titanium_selectimg.jpg'
+import megapixels_rosaone from './megapixels_rosaone.jpg'
+import megapixels_rosatwo from './megapixels_rosatwo.jpg'
+import megapixels_rosaothree from './megapixels_rosaothree.jpg'
 
 const img = {
 
@@ -33,10 +36,14 @@ const img = {
     hero_camera_hw,
     chip_A18PRO,
     frame_startframe,
+    megapixels_rosaone,
+    megapixels_rosatwo,
+    megapixels_rosaothree,
     '#121415': black_titanium_selectimg,
     '#776353':desert_titanium_selectimg,
     '#333739':natural_titanium_selectimg,
-    '#585f63':white_titanium_selectimg
+    '#585f63':white_titanium_selectimg,
+    
 
 }
 
