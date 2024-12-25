@@ -19,6 +19,7 @@ import white_titanium_selectimg from './white_titanium_selectimg.jpg'
 import megapixels_rosaone from './megapixels_rosaone.jpg'
 import megapixels_rosatwo from './megapixels_rosatwo.jpg'
 import megapixels_rosaothree from './megapixels_rosaothree.jpg'
+import hero_ios18bg from './hero_ios18bg.jpg'
 
 const img = {
 
@@ -39,6 +40,7 @@ const img = {
     megapixels_rosaone,
     megapixels_rosatwo,
     megapixels_rosaothree,
+    hero_ios18bg,
     '#121415': black_titanium_selectimg,
     '#776353':desert_titanium_selectimg,
     '#333739':natural_titanium_selectimg,

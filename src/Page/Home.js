@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import '../Style/Home.css'
 import img from "../Img/Img";
+import Neon from '../Style/Neon.css'
 import Banner from "../Components/Banner";
 import EleHover from "../Components/EleHover";
 import SectionGalery from '../Components/SectionGalery';
@@ -36,6 +37,12 @@ const Home = () => {
       <EleHover />
       </div>
       <ImgPhone />
+      <div className="py-32">
+        <div className="contenedor">
+          <h1 className="neon">FANTASTICO Y PROPIO </h1>
+        </div>
+        <img src={img.hero_ios18bg}></img>
+        </div>
     </>
   );
 };
