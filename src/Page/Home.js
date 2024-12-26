@@ -9,6 +9,7 @@ import SectionGalery from '../Components/SectionGalery';
 import Carrousell from "../Components/Carrousell";
 import ColorChangeImage from '../Components/ColorChangeImage';
 import ImgPhone from "../Components/ImgPhone";
+import MoveCards from "../Components/MoveCards";
 
 const Home = () => {
   return (
@@ -39,10 +40,11 @@ const Home = () => {
       <ImgPhone />
       <div className="py-32">
         <div className="contenedor">
-          <h1 className="neon">FANTASTICO Y PROPIO </h1>
+          <h1 className="neon">FANTASTICO Y PROPIO <br /></h1>
         </div>
         <img src={img.hero_ios18bg}></img>
         </div>
+        <MoveCards />
     </>
   );
 };

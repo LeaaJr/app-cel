@@ -1,8 +1,9 @@
 .contenedor {
-        display: flex;
-        justify-content: center; /* Centra el contenido horizontalmente */
-        align-items: center; /* Centra el contenido verticalmente */
-        height: 100vh; /* Asegura que el contenedor ocupe toda la altura de la ventana */
+    display: flex;
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+    height: 100vh; /* Asegura que el contenedor ocupe toda la altura de la ventana */
+    width: 100%; /* Asegura que el contenedor ocupe toda la anchura de la ventana */
 }
 
 h1 {
@@ -15,9 +16,11 @@ h1 {
     text-transform: uppercase;
     text-shadow: 0 0 0.15em #fcfcfb;
     user-select: none;
-    white-space: nowrap;
+    /* Eliminar white-space: nowrap; para permitir el salto de línea */
+    white-space: normal; 
     filter: blur(0.007em);
     animation: shake 2.5s linear forwards;
+    text-align: center; /* Asegura que el texto dentro de h1 esté centrado */
 }
 
 h1 span {

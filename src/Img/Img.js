@@ -41,7 +41,7 @@ const img = {
     megapixels_rosatwo,
     megapixels_rosaothree,
     hero_ios18bg,
-    '#121415': black_titanium_selectimg,
+    '#121415':black_titanium_selectimg,
     '#776353':desert_titanium_selectimg,
     '#333739':natural_titanium_selectimg,
     '#585f63':white_titanium_selectimg,
