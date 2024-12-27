@@ -7,32 +7,32 @@ const Banner = () => {
         <div className="container">
   <div className="item">
     <div className="quote">
-      <p>iPhone 16<span> Azul </span></p>
+      <p>iPhone 16<span> Blue </span></p>
     </div>
   </div>
   <div className="item">
     <div className="quote">
-      <p>iPhone 16 Plus&nbsp;<span> Verde agua </span></p>
+      <p>iPhone 16 Plus&nbsp;<span> Light Green </span></p>
     </div>
   </div>
   <div className="item">
     <div className="quote">
-      <p>iPhone 16 Pro<span> Arena de titanio </span></p>
+      <p>iPhone 16 Pro<span> Titanium Sand </span></p>
     </div>
   </div>
   <div className="item">
     <div className="quote">
-      <p>iPhone 16 Pro Max<span> Titanio negro </span></p>
+      <p>iPhone 16 Pro Max<span> Titanium Black </span></p>
     </div>
   </div>
   <div className="item">
     <div className="quote">
-      <p>iPhone 15<span> Rosa Agua </span></p>
+      <p>iPhone 15 <span> Light Pink </span></p>
     </div>
   </div>
   <div className="item">
     <div className="quote">
-      <p>iPhone 14 <span> Amarillo </span></p>
+      <p>iPhone 14 <span> Yellow </span></p>
     </div>
   </div>
 </div>

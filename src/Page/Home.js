@@ -26,7 +26,7 @@ const Home = () => {
         }}
       >
         <div className="threeD">
-          NUEVO PROCESADOR A18PRO INTEGRADO
+          NEW INTEGRATED A18PRO PROCESSOR
         </div>
       </div>
       <div className="py-32">
@@ -40,7 +40,7 @@ const Home = () => {
       <ImgPhone />
       <div className="py-32">
         <div className="contenedor">
-          <h1 className="neon">FANTASTICO Y PROPIO <br /></h1>
+          <h1 className="neon"> FANTASTIC AND OWN <br /></h1>
         </div>
         <img src={img.hero_ios18bg}></img>
         </div>
