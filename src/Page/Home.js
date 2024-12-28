@@ -5,17 +5,19 @@ import img from "../Img/Img";
 import Neon from '../Style/Neon.css'
 import Banner from "../Components/Banner";
 import EleHover from "../Components/EleHover";
-import SectionGalery from '../Components/SectionGalery';
-import Carrousell from "../Components/Carrousell";
-import ColorChangeImage from '../Components/ColorChangeImage';
+import SectionGalery from '../Sections/SectionGalery';
+import Carrousell from "../Sections/Carrousell";
+import ColorChangeImage from '../Sections/ColorChangeImage';
 import ImgPhone from "../Components/ImgPhone";
-import MoveCards from "../Components/MoveCards";
+import MoveCards from "../Sections/MoveCards";
 
 const Home = () => {
   return (
     <>
       <Banner />
+      <section id="SectionGalery">
       <SectionGalery />
+      </section>
       <div
         className=""
         style={{
