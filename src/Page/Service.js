@@ -121,7 +121,7 @@ const Service = () => {
             </div>
           </div>
 
-          <a href="#" className="text-lg font-semibold leading-tight text-gray-900 hover:underline dark:text-white">Apple iMac 27", 1TB HDD, Retina 5K Display, M3 Max</a>
+          <a href="#" className="text-lg font-semibold leading-tight text-gray-900 hover:underline dark:text-white">Apple iPhone 16 Pro 128GB Black Titanium</a>
 
           <div className="mt-2 flex items-center gap-2">
             <div className="flex items-center">
@@ -167,7 +167,7 @@ const Service = () => {
           </ul>
 
           <div className="mt-4 flex items-center justify-between gap-4">
-            <p className="text-2xl font-extrabold leading-tight text-gray-900 dark:text-white">$1,699</p>
+            <p className="text-2xl font-extrabold leading-tight text-gray-900 dark:text-white">$1,199</p>
 
             <button type="button" className="inline-flex items-center rounded-lg bg-primary-700 px-5 py-2.5 text-sm font-medium text-white hover:bg-primary-800 focus:outline-none focus:ring-4  focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">
               <svg className="-ms-2 me-2 h-5 w-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
@@ -216,7 +216,7 @@ const Service = () => {
             </div>
           </div>
 
-          <a href="#" className="text-lg font-semibold leading-tight text-gray-900 hover:underline dark:text-white">Apple iPhone 15 Pro Max, 256GB, Blue Titanium</a>
+          <a href="#" className="text-lg font-semibold leading-tight text-gray-900 hover:underline dark:text-white">APPLE iPhone 16 Pro 128GB Titanio </a>
 
           <div className="mt-2 flex items-center gap-2">
             <div className="flex items-center">
@@ -317,7 +317,7 @@ const Service = () => {
             </div>
           </div>
 
-          <a href="#" className="text-lg font-semibold leading-tight text-gray-900 hover:underline dark:text-white">iPad Pro 13-Inch (M4): XDR Display, 512GB</a>
+          <a href="#" className="text-lg font-semibold leading-tight text-gray-900 hover:underline dark:text-white">APPLE iPhone 16 Pro 256GB Titanio naturale</a>
 
           <div className="mt-2 flex items-center gap-2">
             <div className="flex items-center">
@@ -363,7 +363,7 @@ const Service = () => {
           </ul>
 
           <div className="mt-4 flex items-center justify-between gap-4">
-            <p className="text-2xl font-extrabold leading-tight text-gray-900 dark:text-white">$799</p>
+            <p className="text-2xl font-extrabold leading-tight text-gray-900 dark:text-white">$1,199</p>
 
             <button type="button" className="inline-flex items-center rounded-lg bg-primary-700 px-5 py-2.5 text-sm font-medium text-white hover:bg-primary-800 focus:outline-none focus:ring-4  focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">
               <svg className="-ms-2 me-2 h-5 w-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
@@ -412,7 +412,7 @@ const Service = () => {
             </div>
           </div>
 
-          <a href="#" className="text-lg font-semibold leading-tight text-gray-900 hover:underline dark:text-white">PlayStation®5 Console – 1TB, PRO Controller</a>
+          <a href="#" className="text-lg font-semibold leading-tight text-gray-900 hover:underline dark:text-white">Apple iPhone 16 Pro 256GB Desert Titanium</a>
 
           <div className="mt-2 flex items-center gap-2">
             <div className="flex items-center">
@@ -458,7 +458,7 @@ const Service = () => {
           </ul>
 
           <div className="mt-4 flex items-center justify-between gap-4">
-            <p className="text-2xl font-extrabold leading-tight text-gray-900 dark:text-white">$499</p>
+            <p className="text-2xl font-extrabold leading-tight text-gray-900 dark:text-white">$1,199</p>
 
             <button type="button" className="inline-flex items-center rounded-lg bg-primary-700 px-5 py-2.5 text-sm font-medium text-white hover:bg-primary-800 focus:outline-none focus:ring-4  focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">
               <svg className="-ms-2 me-2 h-5 w-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
