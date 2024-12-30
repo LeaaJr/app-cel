@@ -20,6 +20,8 @@ import megapixels_rosaone from './megapixels_rosaone.jpg'
 import megapixels_rosatwo from './megapixels_rosatwo.jpg'
 import megapixels_rosaothree from './megapixels_rosaothree.jpg'
 import hero_ios18bg from './hero_ios18bg.jpg'
+import watchultra2black from './watch-card-40-ultra2black.jpg'
+import watchS10 from './watch-card-40-s10-gold.jpg'
 
 const img = {
 
@@ -41,6 +43,8 @@ const img = {
     megapixels_rosatwo,
     megapixels_rosaothree,
     hero_ios18bg,
+    watchultra2black,
+    watchS10,
     '#121415':black_titanium_selectimg,
     '#776353':desert_titanium_selectimg,
     '#333739':natural_titanium_selectimg,

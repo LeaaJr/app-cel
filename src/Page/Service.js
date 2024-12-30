@@ -167,7 +167,7 @@ const Service = () => {
           </ul>
 
           <div className="mt-4 flex items-center justify-between gap-4">
-            <p className="text-2xl font-extrabold leading-tight text-gray-900 dark:text-white">$1,199</p>
+            <p className="text-2xl font-extrabold leading-tight text-gray-900 dark:text-white">€1,199</p>
 
             <button type="button" className="inline-flex items-center rounded-lg bg-primary-700 px-5 py-2.5 text-sm font-medium text-white hover:bg-primary-800 focus:outline-none focus:ring-4  focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">
               <svg className="-ms-2 me-2 h-5 w-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
@@ -268,7 +268,7 @@ const Service = () => {
           </ul>
 
           <div className="mt-4 flex items-center justify-between gap-4">
-            <p className="text-2xl font-extrabold leading-tight text-gray-900 dark:text-white">$1,199</p>
+            <p className="text-2xl font-extrabold leading-tight text-gray-900 dark:text-white">€1,199</p>
 
             <button type="button" className="inline-flex items-center rounded-lg bg-primary-700 px-5 py-2.5 text-sm font-medium text-white hover:bg-primary-800 focus:outline-none focus:ring-4  focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">
               <svg className="-ms-2 me-2 h-5 w-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
@@ -363,7 +363,7 @@ const Service = () => {
           </ul>
 
           <div className="mt-4 flex items-center justify-between gap-4">
-            <p className="text-2xl font-extrabold leading-tight text-gray-900 dark:text-white">$1,199</p>
+            <p className="text-2xl font-extrabold leading-tight text-gray-900 dark:text-white">€1,199</p>
 
             <button type="button" className="inline-flex items-center rounded-lg bg-primary-700 px-5 py-2.5 text-sm font-medium text-white hover:bg-primary-800 focus:outline-none focus:ring-4  focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">
               <svg className="-ms-2 me-2 h-5 w-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
@@ -458,7 +458,7 @@ const Service = () => {
           </ul>
 
           <div className="mt-4 flex items-center justify-between gap-4">
-            <p className="text-2xl font-extrabold leading-tight text-gray-900 dark:text-white">$1,199</p>
+            <p className="text-2xl font-extrabold leading-tight text-gray-900 dark:text-white">€1,199</p>
 
             <button type="button" className="inline-flex items-center rounded-lg bg-primary-700 px-5 py-2.5 text-sm font-medium text-white hover:bg-primary-800 focus:outline-none focus:ring-4  focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">
               <svg className="-ms-2 me-2 h-5 w-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
@@ -473,7 +473,7 @@ const Service = () => {
         <div className="h-56 w-full">
           <a href="#">
             <img className="mx-auto h-full dark:hidden" src="https://flowbite.s3.amazonaws.com/blocks/e-commerce/xbox-light.svg" alt="" />
-            <img className="mx-auto hidden h-full w-full object-cover dark:block" src="https://flowbite.s3.amazonaws.com/blocks/e-commerce/xbox-dark.svg" alt="" />
+            <img className="mx-auto hidden h-full w-full object-cover dark:block" src={img.iPhone15rosa} alt="" />
           </a>
         </div>
 
@@ -507,7 +507,7 @@ const Service = () => {
             </div>
           </div>
 
-          <a href="#" className="text-lg font-semibold leading-tight text-gray-900 hover:underline dark:text-white">Microsoft Xbox Series X 1TB Gaming Console</a>
+          <a href="#" className="text-lg font-semibold leading-tight text-gray-900 hover:underline dark:text-white"> iPhone 15 128GB, Pink</a>
 
           <div className="mt-2 flex items-center gap-2">
             <div className="flex items-center">
@@ -559,7 +559,7 @@ const Service = () => {
           </ul>
 
           <div className="mt-4 flex items-center justify-between gap-4">
-            <p className="text-2xl font-extrabold leading-tight text-gray-900 dark:text-white">$499</p>
+            <p className="text-2xl font-extrabold leading-tight text-gray-900 dark:text-white">€670</p>
 
             <button type="button" className="inline-flex items-center rounded-lg bg-primary-700 px-5 py-2.5 text-sm font-medium text-white hover:bg-primary-800 focus:outline-none focus:ring-4  focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">
               <svg className="-ms-2 me-2 h-5 w-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
@@ -574,7 +574,7 @@ const Service = () => {
         <div className="h-56 w-full">
           <a href="#">
             <img className="mx-auto h-full dark:hidden" src="https://flowbite.s3.amazonaws.com/blocks/e-commerce/macbook-pro-light.svg" alt="" />
-            <img className="mx-auto hidden h-full w-full object-cover dark:block" src="https://flowbite.s3.amazonaws.com/blocks/e-commerce/macbook-pro-dark.svg" alt="" />
+            <img className="mx-auto hidden h-full w-full object-cover dark:block" src={img.iPhone14amarillo} alt="" />
           </a>
         </div>
 
@@ -608,7 +608,7 @@ const Service = () => {
             </div>
           </div>
 
-          <a href="#" className="text-lg font-semibold leading-tight text-gray-900 hover:underline dark:text-white">Apple MacBook PRO Laptop with M2 chip</a>
+          <a href="#" className="text-lg font-semibold leading-tight text-gray-900 hover:underline dark:text-white"> iPhone 14 128GB, Yellow Edition Limited</a>
 
           <div className="mt-2 flex items-center gap-2">
             <div className="flex items-center">
@@ -654,7 +654,7 @@ const Service = () => {
           </ul>
 
           <div className="mt-4 flex items-center justify-between gap-4">
-            <p className="text-2xl font-extrabold leading-tight text-gray-900 dark:text-white">$2,599</p>
+            <p className="text-2xl font-extrabold leading-tight text-gray-900 dark:text-white">€620</p>
 
             <button type="button" className="inline-flex items-center rounded-lg bg-primary-700 px-5 py-2.5 text-sm font-medium text-white hover:bg-primary-800 focus:outline-none focus:ring-4  focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">
               <svg className="-ms-2 me-2 h-5 w-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
@@ -669,7 +669,7 @@ const Service = () => {
         <div className="h-56 w-full">
           <a href="#">
             <img className="mx-auto h-full dark:hidden" src="https://flowbite.s3.amazonaws.com/blocks/e-commerce/apple-watch-light.svg" alt="" />
-            <img className="mx-auto hidden h-full w-full object-cover dark:block" src="https://flowbite.s3.amazonaws.com/blocks/e-commerce/apple-watch-dark.svg" alt="" />
+            <img className="mx-auto hidden h-full w-full object-cover dark:block" src={img.watchS10} alt="" />
           </a>
         </div>
 
@@ -703,7 +703,7 @@ const Service = () => {
             </div>
           </div>
 
-          <a href="#" className="text-lg font-semibold leading-tight text-gray-900 hover:underline dark:text-white">Apple Watch SE [GPS 40mm], Smartwatch</a>
+          <a href="#" className="text-lg font-semibold leading-tight text-gray-900 hover:underline dark:text-white"> Apple Watch Series 10 </a>
 
           <div className="mt-2 flex items-center gap-2">
             <div className="flex items-center">
@@ -749,7 +749,7 @@ const Service = () => {
           </ul>
 
           <div className="mt-4 flex items-center justify-between gap-4">
-            <p className="text-2xl font-extrabold leading-tight text-gray-900 dark:text-white">$699</p>
+            <p className="text-2xl font-extrabold leading-tight text-gray-900 dark:text-white">€459</p>
 
             <button type="button" className="inline-flex items-center rounded-lg bg-primary-700 px-5 py-2.5 text-sm font-medium text-white hover:bg-primary-800 focus:outline-none focus:ring-4  focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">
               <svg className="-ms-2 me-2 h-5 w-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
@@ -764,7 +764,7 @@ const Service = () => {
         <div className="h-56 w-full">
           <a href="#">
             <img className="mx-auto h-full dark:hidden" src="https://flowbite.s3.amazonaws.com/blocks/e-commerce/ipad-keyboard.svg" alt="" />
-            <img className="mx-auto hidden h-full w-full object-cover dark:block" src="https://flowbite.s3.amazonaws.com/blocks/e-commerce/ipad-keyboard-dark.svg" alt="" />
+            <img className="mx-auto hidden h-full w-full object-cover dark:block" src={img.watchultra2black} alt="" />
           </a>
         </div>
         <div className="pt-6">
@@ -797,7 +797,7 @@ const Service = () => {
             </div>
           </div>
 
-          <a href="#" className="text-lg font-semibold leading-tight text-gray-900 hover:underline dark:text-white">Microsoft Surface Pro, Copilot+ PC, 13 Inch</a>
+          <a href="#" className="text-lg font-semibold leading-tight text-gray-900 hover:underline dark:text-white"> Apple Watch Ultra 2 </a>
 
           <div className="mt-2 flex items-center gap-2">
             <div className="flex items-center">
@@ -843,7 +843,7 @@ const Service = () => {
           </ul>
 
           <div className="mt-4 flex items-center justify-between gap-4">
-            <p className="text-2xl font-extrabold leading-tight text-gray-900 dark:text-white">$899</p>
+            <p className="text-2xl font-extrabold leading-tight text-gray-900 dark:text-white">€909</p>
 
             <button type="button" className="inline-flex items-center rounded-lg bg-primary-700 px-5 py-2.5 text-sm font-medium text-white hover:bg-primary-800 focus:outline-none focus:ring-4  focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">
               <svg className="-ms-2 me-2 h-5 w-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
