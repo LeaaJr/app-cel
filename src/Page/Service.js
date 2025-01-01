@@ -23,7 +23,7 @@ import img from "../Img/Img";
     const showMoreCards = () => {
       setVisibleCards(prev => prev + 12); // Incrementa el número de tarjetas visibles
     };
-  
+
     return (
       <section className="bg-black py-8 antialiased dark:bg-black md:py-12">
         <div className="mx-auto max-w-screen-xl px-4 2xl:px-0">
@@ -95,4 +95,4 @@ import img from "../Img/Img";
     );
   };
   
-  export default Service;  
+  export default Service;

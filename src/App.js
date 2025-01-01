@@ -4,6 +4,7 @@ import NavBar from './Components/Navbar'
 import Home from './Page/Home';
 import Footer from './Components/Footer';
 import Service from './Page/Service';
+import ScrollToTop from './Scroll/ScrollToTop'
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
     <Router>
 
         <NavBar />
+        <ScrollToTop />
 
         <main>
         <Routes>
