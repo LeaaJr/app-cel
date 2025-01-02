@@ -22,6 +22,8 @@ import megapixels_rosaothree from './megapixels_rosaothree.jpg'
 import hero_ios18bg from './hero_ios18bg.jpg'
 import watchultra2black from './watch-card-40-ultra2black.jpg'
 import watchS10 from './watch-card-40-s10-gold.jpg'
+import watchYellow from './watch-card-40yellow.jpg'
+import watchPink from './watch-card-40-hermesrose.jpg'
 
 const img = {
 
@@ -45,6 +47,8 @@ const img = {
     hero_ios18bg,
     watchultra2black,
     watchS10,
+    watchYellow,
+    watchPink,
     '#121415':black_titanium_selectimg,
     '#776353':desert_titanium_selectimg,
     '#333739':natural_titanium_selectimg,
