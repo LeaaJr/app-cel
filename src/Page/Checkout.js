@@ -1,213 +1,106 @@
-import React, { useState } from 'react';
-import Service from './Service';
+import React from 'react';
+import { useLocation } from 'react-router-dom'; // Importar useLocation
+import product from './Service'
 
 const CheckoutForm = () => {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    country: 'United States',
-    city: 'San Francisco',
-    address: '',
-    phone: '',
-    paymentMethod: 'credit-card',
-    deliveryMethod: 'standard',
-    voucher: '',
-  });
+  const location = useLocation();
+  const products = location.state?.products || []; // Asegurémonos de que recibimos los productos correctamente
 
+  console.log('Productos recibidos en CheckoutForm:', products); // Verificar en consola
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData((prev) => ({ ...prev, [name]: value }));
-  };
+  // Si los productos no están llegando, no continuamos con los cálculos
+  if (products.length === 0) {
+    console.error('No se recibieron productos!');
+  }
 
-  const applyVoucher = () => {
-    alert(`Voucher applied: ${formData.voucher}`);
-  };
+  // Calcular el precio total de los productos
+  const totalPrice = products.reduce((sum, item) => {
+    // Limpiamos el precio (eliminamos cualquier cosa que no sea un número o punto decimal)
+    const cleanedPrice = item.price.replace(/[^\d.-]/g, '');  // Eliminar todo excepto números y puntos
+    const priceValue = parseFloat(cleanedPrice);  // Convertimos el precio a un número flotante
 
-  const YourComponent = () => {
-    const [cart, setCart] = useState([]); // Aquí puedes gestionar los productos en el carrito
-  
-    const getPrice = (productId) => {
-        const product = products.find(item => item.id === productId);
-        return product ? product.price : "No price available";
-      };
-  
-    // Función para manejar el agregado de productos al carrito
-    const addToCart = (productId) => {
-      const product = products.find(item => item.id === productId);
-      if (product) {
-        setCart([...cart, product]);
-      }
-    };
+    // Sumar el precio, asegurándonos de que el valor sea válido
+    return sum + (isNaN(priceValue) ? 0 : priceValue);
+  }, 0);
+
+  console.log('Precio total calculado:', totalPrice);
+
+  // Aquí puedes añadir los cálculos de impuestos, envío, descuento, etc.
+  const tax = totalPrice * 0.1; // Ejemplo: 10% de impuesto
+  const shipping = 50; // Costo de envío fijo
+  const savings = 100; // Ejemplo de descuento
+  const finalTotal = totalPrice - savings + tax + shipping;
+
+  console.log(`Impuestos: ${tax}`);
+  console.log(`Envío: ${shipping}`);
+  console.log(`Descuento: ${savings}`);
+  console.log(`Total final: ${finalTotal}`);
 
   return (
-    <section className="bg-white py-8 antialiased dark:bg-black md:py-16" >
-    <form action="#" className="mx-auto max-w-screen-xl px-4 2xl:px-0">
-  <ol className="items-center flex w-full max-w-2xl text-center text-sm font-medium text-gray-500 dark:text-gray-400 sm:text-base">
-    <li className="after:border-1 flex items-center text-primary-700 after:mx-6 after:hidden after:h-1 after:w-full after:border-b after:border-gray-200 dark:text-primary-500 dark:after:border-gray-700 sm:after:inline-block sm:after:content-[''] md:w-full xl:after:mx-10">
-      <span className="flex items-center after:mx-2 after:text-gray-200 after:content-['/'] dark:after:text-gray-500 sm:after:hidden">
-        <svg className="me-2 h-4 w-4 sm:h-5 sm:w-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-          <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M8.5 11.5 11 14l4-4m6 2a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-        </svg>
-        Cart
-      </span>
-    </li>
+    <section className="bg-white py-8 antialiased dark:bg-gray-900 md:py-16">
+      <div className="mx-auto max-w-screen-xl px-4 2xl:px-0">
+        <div className="mx-auto max-w-5xl">
+          <h2 className="text-xl font-semibold text-gray-900 dark:text-white sm:text-2xl">Payment</h2>
 
-    <li className="after:border-1 flex items-center text-primary-700 after:mx-6 after:hidden after:h-1 after:w-full after:border-b after:border-gray-200 dark:text-primary-500 dark:after:border-gray-700 sm:after:inline-block sm:after:content-['/'] md:w-full xl:after:mx-10">
-      <span className="flex items-center after:mx-2 after:text-gray-200 after:content-['/'] dark:after:text-gray-500 sm:after:hidden">
-        <svg className="me-2 h-4 w-4 sm:h-5 sm:w-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-          <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M8.5 11.5 11 14l4-4m6 2a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-        </svg>
-        Checkout
-      </span>
-    </li>
+          <div className="mt-6 sm:mt-8 lg:flex lg:items-start lg:gap-12">
+            {/* Formulario de pago */}
+            <form action="#" className="w-full rounded-lg border border-gray-200 bg-white p-4 shadow-sm dark:border-gray-700 dark:bg-gray-800 sm:p-6 lg:max-w-xl lg:p-8">
+              <div className="mb-6 grid grid-cols-2 gap-4">
+                <div className="col-span-2 sm:col-span-1">
+                  <label htmlFor="full_name" className="mb-2 block text-sm font-medium text-gray-900 dark:text-white">Full name (as displayed on card)*</label>
+                  <input type="text" id="full_name" className="block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 focus:border-primary-500 focus:ring-primary-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder:text-gray-400 dark:focus:border-primary-500 dark:focus:ring-primary-500" placeholder="Bonnie Green" required />
+                </div>
 
-    <li className="flex shrink-0 items-center">
-      <svg className="me-2 h-4 w-4 sm:h-5 sm:w-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-        <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M8.5 11.5 11 14l4-4m6 2a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-      </svg>
-      Order summary
-    </li>
-  </ol>
+                <div className="col-span-2 sm:col-span-1">
+                  <label htmlFor="card-number-input" className="mb-2 block text-sm font-medium text-gray-900 dark:text-white">Card number*</label>
+                  <input type="text" id="card-number-input" className="block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 pe-10 text-sm text-gray-900 focus:border-primary-500 focus:ring-primary-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder:text-gray-400 dark:focus:border-primary-500 dark:focus:ring-primary-500" placeholder="xxxx-xxxx-xxxx-xxxx" required />
+                </div>
+              </div>
 
-  <div className="mt-6 sm:mt-8 lg:flex lg:items-start lg:gap-12 xl:gap-16">
-    <div className="min-w-0 flex-1 space-y-8">
-      <div className="space-y-4">
-        <h2 className="text-xl font-semibold text-gray-900 dark:text-white">Delivery Details</h2>
+              <button type="submit" className="flex w-full items-center justify-center rounded-lg bg-primary-700 px-5 py-2.5 text-sm font-medium text-white hover:bg-primary-800 focus:outline-none focus:ring-4 focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Pay now</button>
+            </form>
 
-        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
-          <div>
-            <label htmlFor="your_name" className="mb-2 block text-sm font-medium text-gray-900 dark:text-white"> Your name </label>
-            <input
-              type="text"
-              id="your_name"
-              className="block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 focus:border-primary-500 focus:ring-primary-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder:text-gray-400 dark:focus:border-primary-500 dark:focus:ring-primary-500"
-              placeholder="Bonnie Green"
-              required
-            />
+            {/* Resumen de precio */}
+            <div className="mt-6 grow sm:mt-8 lg:mt-0">
+              <div className="space-y-4 rounded-lg border border-gray-100 bg-gray-50 p-6 dark:border-gray-700 dark:bg-gray-800">
+                <div className="space-y-2">
+                  <dl className="flex items-center justify-between gap-4">
+                    <dt className="text-base font-normal text-gray-500 dark:text-gray-400">Original price</dt>
+                    <dd className="text-base font-medium text-gray-900 dark:text-white">${totalPrice.toFixed(2)}</dd>
+                  </dl>
+
+                  <dl className="flex items-center justify-between gap-4">
+                    <dt className="text-base font-normal text-gray-500 dark:text-gray-400">Savings</dt>
+                    <dd className="text-base font-medium text-green-500">-${savings.toFixed(2)}</dd>
+                  </dl>
+
+                  <dl className="flex items-center justify-between gap-4">
+                    <dt className="text-base font-normal text-gray-500 dark:text-gray-400">Store Pickup</dt>
+                    <dd className="text-base font-medium text-gray-900 dark:text-white">${shipping}</dd>
+                  </dl>
+
+                  <dl className="flex items-center justify-between gap-4">
+                    <dt className="text-base font-normal text-gray-500 dark:text-gray-400">Tax</dt>
+                    <dd className="text-base font-medium text-gray-900 dark:text-white">${tax.toFixed(2)}</dd>
+                  </dl>
+                </div>
+
+                <dl className="flex items-center justify-between gap-4 border-t border-gray-200 pt-2 dark:border-gray-700">
+                  <dt className="text-base font-bold text-gray-900 dark:text-white">Total</dt>
+                  <dd className="text-base font-bold text-gray-900 dark:text-white">${finalTotal.toFixed(2)}</dd>
+                </dl>
+              </div>
+            </div>
           </div>
 
-          <div>
-            <label htmlFor="your_email" className="mb-2 block text-sm font-medium text-gray-900 dark:text-white"> Your email* </label>
-            <input
-              type="email"
-              id="your_email"
-              className="block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 focus:border-primary-500 focus:ring-primary-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder:text-gray-400 dark:focus:border-primary-500 dark:focus:ring-primary-500"
-              placeholder="name@flowbite.com"
-              required
-            />
-          </div>
-
-          <div>
-            <label htmlFor="address" className="mb-2 block text-sm font-medium text-gray-900 dark:text-white"> Address </label>
-            <input
-              type="text"
-              id="address"
-              className="block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 focus:border-primary-500 focus:ring-primary-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder:text-gray-400 dark:focus:border-primary-500 dark:focus:ring-primary-500"
-              placeholder="123 Main St"
-              required
-            />
-          </div>
-
-          <div>
-            <label htmlFor="phone" className="mb-2 block text-sm font-medium text-gray-900 dark:text-white"> Phone Number </label>
-            <input
-              type="tel"
-              id="phone"
-              className="block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 focus:border-primary-500 focus:ring-primary-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder:text-gray-400 dark:focus:border-primary-500 dark:focus:ring-primary-500"
-              placeholder="+1 234 567 890"
-            />
-          </div>
-
-          <div>
-            <label htmlFor="country" className="mb-2 block text-sm font-medium text-gray-900 dark:text-white"> Country* </label>
-            <select
-              id="country"
-              className="block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 focus:border-primary-500 focus:ring-primary-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder:text-gray-400 dark:focus:border-primary-500 dark:focus:ring-primary-500"
-            >
-              <option>United States</option>
-              <option>Australia</option>
-              <option>France</option>
-              <option>Spain</option>
-              <option>United Kingdom</option>
-            </select>
-          </div>
-
-          <div>
-            <label htmlFor="city" className="mb-2 block text-sm font-medium text-gray-900 dark:text-white"> City* </label>
-            <select
-              id="city"
-              className="block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 focus:border-primary-500 focus:ring-primary-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder:text-gray-400 dark:focus:border-primary-500 dark:focus:ring-primary-500"
-            >
-              <option>San Francisco</option>
-              <option>New York</option>
-              <option>Los Angeles</option>
-              <option>Chicago</option>
-              <option>Houston</option>
-            </select>
-          </div>
-
+          <p className="mt-6 text-center text-gray-500 dark:text-gray-400 sm:mt-8 lg:text-left">
+            Payment processed by <a href="#" title="" className="font-medium text-primary-700 underline hover:no-underline dark:text-primary-500">Paddle</a> for <a href="#" title="" className="font-medium text-primary-700 underline hover:no-underline dark:text-primary-500">Flowbite LLC</a>
+            - United States Of America
+          </p>
         </div>
       </div>
-
-      <div className="space-y-4">
-        <h2 className="text-xl font-semibold text-gray-900 dark:text-white">Payment Method</h2>
-
-        <div>
-          <label htmlFor="payment_method" className="mb-2 block text-sm font-medium text-gray-900 dark:text-white"> Select Payment Method </label>
-          <select
-            id="payment_method"
-            className="block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 focus:border-primary-500 focus:ring-primary-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder:text-gray-400 dark:focus:border-primary-500 dark:focus:ring-primary-500"
-          >
-            <option value="credit_card">Credit Card</option>
-            <option value="paypal">Paypal</option>
-            <option value="bank_transfer">Bank Transfer</option>
-          </select>
-        </div>
-      </div>
-
-      <div className="space-y-4">
-        <label htmlFor="voucher" className="block text-sm font-medium text-gray-900 dark:text-white"> Voucher Code </label>
-        <div className="flex gap-4">
-          <input
-            type="text"
-            id="voucher"
-            className="block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 focus:border-primary-500 focus:ring-primary-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder:text-gray-400 dark:focus:border-primary-500 dark:focus:ring-primary-500"
-            placeholder="Enter your voucher code"
-          />
-          <button
-            type="button"
-            className="w-24 rounded-lg bg-primary-700 px-4 py-2.5 text-sm text-white hover:bg-primary-800 focus:outline-none"
-          >
-            Apply
-          </button>
-        </div>
-      </div>
-
-      <div className="mt-8">
-        <button
-          type="submit"
-          className="w-full rounded-lg bg-primary-700 px-6 py-3 text-lg text-white hover:bg-primary-800 focus:outline-none"
-        >
-          Confirm Order
-        </button>
-      </div>
-    </div>
-
-    <div className="mt-8 lg:mt-0 lg:max-w-xs">
-      <div className="space-y-4 rounded-lg border border-gray-200 bg-gray-50 p-4 shadow-lg dark:border-gray-600 dark:bg-gray-800">
-        <h3 className="text-lg font-semibold text-gray-900 dark:text-white">Order Summary</h3>
-        <ul className="space-y-2 text-sm text-gray-900 dark:text-white">
-        </ul>
-        <hr className="my-4" />
-        <p className="text-lg font-semibold text-gray-900 dark:text-white">${price}</p>
-      </div>
-    </div>
-  </div>
-</form>
-
     </section>
   );
-}};
+};
 
 export default CheckoutForm;

@@ -1,6 +1,6 @@
 import React from "react";
 import { Link as ScrollLink } from 'react-scroll';  // Importa Link de react-scroll
-import { Link } from 'react-router-dom';
+import { Link, Route } from 'react-router-dom';
 
 const NavBar = () => {
 
@@ -67,12 +67,14 @@ const NavBar = () => {
               </Link>
             </li>
             <li>
-              <Link
-                to="/Footer"
+            <ScrollLink
+                to="Footer"  // Asegúrate de que coincida con el ID del destino
+                smooth={true}       // Hacer el scroll suave
+                duration={700}      // Duración del scroll
                 className="block py-2 px-3 md:p-0 text-transparent-900 rounded hover:bg-transparent-100 md:hover:bg-transparent md:hover:text-transparent-700 md:dark:hover:text-transparent-500 dark:text-white dark:hover:bg-transparent-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-transparent-700"
               >
                 Contact
-              </Link>
+                </ScrollLink>
             </li>
           </ul>
         </div>

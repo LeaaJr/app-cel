@@ -4,7 +4,7 @@ import NavBar from './Components/Navbar'
 import Home from './Page/Home';
 import Footer from './Components/Footer';
 import Service from './Page/Service';
-import Checkout from './Page/Checkout';
+import CheckoutForm from './Page/Checkout';
 import ScrollToTop from './Scroll/ScrollToTop';
 
 function App() {
@@ -19,13 +19,15 @@ function App() {
         <Routes>
             <Route path="/" element={<Home/>} />
             <Route path="/Service" element={<Service/>} />
-            <Route path="/Checkout" element={<Checkout/>} />
+            <Route path="/Checkout" element={<CheckoutForm />} />
         </Routes>
         </main>
 
 
         {/* Footer */}
+        <section id="Footer">
         <Footer />
+        </section>
     </Router>
     
     </>
